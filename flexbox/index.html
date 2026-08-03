@@ -30,7 +30,7 @@
 
     <header class="page-header">
     <!--Pequeno rotulo visual acima do titulo principal-->
-    <span class="page-laber">Laboratorio interaivo</span>
+    <span class="page-label.">Laboratorio interaivo</span>
     <!--h1 e o titulo principal e deve representar o assunto da pagina.-->
     <h1>Flexbox Playground</h1>
     <p>
@@ -69,14 +69,47 @@
          PARTE 1 - PROPRIEDADES DO FLEX CONTAINER
         Sao aplicadas ao elemento pai, responsavel por organizar os itens
     =================================================== -->
-    <header class="group-reader">
+    <header class="group-header">
       <span>Parte 1 </span>
       <h2>Propriedades do flex container</h2>
       <p>Estas propiedades sao aplicadas ao elemento que contem os itens.</p>
 <header>
+
+
+<!-- ===========================================
+ Secao: flex-direction
+ Define a direcao do eixo principal e a ordem incial dos intens 
+ O id permite acessar esta secao pelo menu de navegacao
+=========================================== -->
+<section class="demo" id="flex-direction">
+ <!--Agrupa  o titulo da propriedade e o botao que restaura o valor inicial -->
+ <div class="demo-heading">
+    <div>
+            <span class="property-type"> FLex container</span>
+            <h2>Flex-direction</h2>
+    </div>
+    <button type="button" class="reset-button " data-reset-section="diretion">Restaurar padrao </button>
+     </div>
+   <p class="demo-introduction">
+    Define a direcao do eixo principal e  a ordem em que os itens sao apresentados.
+   </p>
+
+
+<!--
+
+Grupo de botoes com os valores da propriedades.
+role=*group" e arial-label ajudam leitores de tela 
+data-*guarda o valor que sera lido pelo JavaScript.
+arial -pressed informa qual botao esta ativo.
+
+-->
+
+<div class="buttons" role="group" aria-label="Valores de flex-direction">>
+   <button type="button" data-direction="row" aria-pressed="row"></button>
+   <button type="button" data-direction="row-reverse" aria-pressed="now-reverse"></button>
+   <button type="button" data-direction="column" aria-pressed="column"></button>
+   <button type="button" data-direction="column-reverse" aria-pressed="column-reverse"></button>
+  </div>
+  </section>
+
 <main>
-
-
-  
-</body>
-</html>
