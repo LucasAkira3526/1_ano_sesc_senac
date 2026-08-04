@@ -110,6 +110,58 @@ arial -pressed informa qual botao esta ativo.
    <button type="button" data-direction="column" aria-pressed="column"></button>
    <button type="button" data-direction="column-reverse" aria-pressed="column-reverse"></button>
   </div>
+
+   <!--
+    Descricao atualizada pelo JavaScript conforme o botao escolhido.
+    arial-live="polite"permite anuciar a mudanca para leitores de tela.
+
+-->
+
+
+<p class="property-description diretion-descripion" aria-live="polite">
+Organiza os intes horizontalmente , da esquerda para a direita.
+  <P>
+
+<!--
+
+Area visual da demontracao
+A classe container recebe display:flex do CSS
+A segunda classe identifica a propriedades demontradas
+
+-->
+
+
+<div class="container direction" id="direction-container">
+    <span class="container-label ">flex container</span>
+    <!--Indicadores dos eixos; o JavaScript atualiza as setas nestas secao. -->
+    <span class="axis axis-main direction-main-axis">eixo principal →</span>
+    <span class="axis axis-cross direction-crossa-axis">Eixo segudario ↓</span>
+    <!--Cada elemento . item e uma flex Item . Os numeros facilitam observar ordem e posicao.-->
+          <div><span class="item">1</span></div>
+          <div><span class="item">2</span></div>
+          <div><span class="item">3</span></div>
+          <div><span class="item">4</span></div>
+</div>
+
+<!--
+
+ Mostra o CSS correspondente ao valor selecionado.
+ <pre> preservar espacos e quebras de linhas code indetifica codigo-fonte
+ O botao usa data-copy-property e data-copy-target para  copiar o resultado 
+-->
+   <div class="code-wrapper">
+    <pre class="code"><code>.container {
+display:flex;
+flex-direction: <strong class="direction-value" aria-live="polite"></strong>;
+}</code><pre> 
+          <button type="button class="copy-button" data-copy-property="flex-direction"
+            data-copy-target="drirection-valeu">Copiar CSS</button>
+      </div>  
   </section>
 
 <main>
+
+
+</body>
+</html>
+
